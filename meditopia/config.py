@@ -5,7 +5,7 @@ Manages ~/.meditopia/config.json — stores token and API URL.
 import json
 from pathlib import Path
 
-CONFIG_DIR  = Path.home() / ".meditopia"
+CONFIG_DIR = Path.home() / ".meditopia"
 CONFIG_FILE = CONFIG_DIR / "config.json"
 
 DEFAULT_API_URL = "http://localhost:8000/api/v1"
@@ -32,7 +32,7 @@ def get_api_url() -> str:
 
 def set_credentials(token: str, api_url: str = DEFAULT_API_URL) -> None:
     cfg = load()
-    cfg["token"]   = token
+    cfg["token"] = token
     cfg["api_url"] = api_url
     save(cfg)
 

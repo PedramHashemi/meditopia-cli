@@ -1,0 +1,2 @@
+[console_scripts]
+medi = meditopia.cli:app
